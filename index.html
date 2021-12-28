@@ -132,7 +132,13 @@
                 <div class="statusbox">
                     <span class="label"> </span>
                     <div class="server-status">
-                        Nosso servidor está <span class="server-online"></span>!
+                        <img src=<span class="server-image"></span>/>
+                        <br>
+                        Endereço: jogar.minecraft.gpcr.tk
+                        <br>
+                        Status: <span class="server-online"></span>
+                        <br>
+                        Jogadores Online: <span class="server-players"></span>
                     </div>
                     <script>
                         MinecraftAPI.getServerStatus('jogar.minecraft.gpcr.tk', {
@@ -144,6 +150,8 @@
         
                         // you can change these to your own message!
                            document.querySelector('.server-online').innerHTML = status.online ?     'Online' : 'Offline';
+                           document.querySelector('.server-players').innerHTML = status.players.now;
+                           document.querySelector('.server-image'.innerHTML = status.favicon;
                          });
                     </script>
                 </div>
