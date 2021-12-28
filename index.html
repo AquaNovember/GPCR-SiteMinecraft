@@ -139,11 +139,11 @@
                            port: 10020
                          }, function (err, status) {
                            if (err) {
-                         return document.querySelector('.server-status').innerHTML = 'Não foi possível verificar os status do servidor, por favor, entre em contato com um administrador.';
+                         return document.querySelector('.server-status').innerHTML = 'Infelizmente o servidor está Offline, consulte nosso Discord para saber mais.';
                            }
         
                         // you can change these to your own message!
-                           document.querySelector('.server-online').innerHTML = status.online ?     'online' : 'offline';
+                           document.querySelector('.server-online').innerHTML = status.online ?     'Online' : 'Offline';
                          });
                     </script>
                 </div>
