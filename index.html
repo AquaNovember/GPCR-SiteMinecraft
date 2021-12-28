@@ -129,14 +129,14 @@
                 <div class="statusbox">
                     <span class="label"> </span>
                     <div class="server-status">
-                        My awesome server is currently <span class="server-online"></span>!
+                        Nosso servidor está <span class="server-online"></span>!
                     </div>
                     <script>
                         MinecraftAPI.getServerStatus('jogar.minecraft.gpcr.tk', {
                            port: 10020
                          }, function (err, status) {
                            if (err) {
-                         return document.querySelector('.server-status').innerHTML = 'Error loading status';
+                         return document.querySelector('.server-status').innerHTML = 'Não foi possível verificar os status do servidor, por favor, entre em contato com um administrador.';
                            }
         
                         // you can change these to your own message!
