@@ -1,2 +1,3 @@
-# Site do Servidor de Minecraft do GPCR
+# Site do Servidor de Minecraft do GPCR (Antigo)
+Projeto descontinuado e sem atualizações, só deixei aqui para lembranças...
 Feito por AquaNovember.
